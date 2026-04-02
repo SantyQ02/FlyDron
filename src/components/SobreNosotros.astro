@@ -1,0 +1,234 @@
+---
+import { Image } from 'astro:assets';
+import founderPhoto from '../assets/photos/founder.jpeg';
+---
+
+<section id="sobre-nosotros" class="section section--alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Sobre Nosotros</span>
+      <h2 class="section-title">Quiénes Somos</h2>
+    </div>
+
+    <div class="about-grid">
+      <!-- Photo -->
+      <div class="about-photo reveal reveal-delay-1">
+        <div class="about-photo-frame">
+          <Image
+            src={founderPhoto}
+            alt="Matías Morillo — Fundador de FlyDron"
+            widths={[300, 450, 600]}
+            sizes="(max-width: 768px) 280px, 400px"
+            class="about-img"
+          />
+          <div class="about-photo-border"></div>
+        </div>
+        <div class="about-name-card">
+          <span class="about-name">Matías Morillo</span>
+          <span class="about-role">Fundador & Operador</span>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="about-text reveal reveal-delay-2">
+        <blockquote class="about-quote">
+          "Creemos que la tecnología aérea tiene el poder de transformar
+          la manera en que cuidamos y potenciamos nuestros cultivos."
+        </blockquote>
+
+        <p>
+          FlyDron nace de la convicción de que el campo argentino merece acceso
+          a las herramientas más avanzadas del mercado. Con drones DJI de última
+          generación, ofrecemos un servicio integral de aplicaciones aéreas que
+          combina eficiencia, precisión y cuidado del medio ambiente.
+        </p>
+
+        <p>
+          Liderados por Matías Morillo, nuestro equipo se especializa en
+          pulverización de precisión y mapeo multiespectral, ayudando a
+          productores a optimizar cada hectárea, reducir costos de insumos
+          y tomar decisiones basadas en datos reales del cultivo.
+        </p>
+
+        <p>
+          Cada operación se ejecuta con los más altos estándares de seguridad
+          y profesionalismo, garantizando resultados visibles y medibles desde
+          la primera aplicación.
+        </p>
+
+        <div class="about-stats">
+          <div class="about-stat">
+            <span class="about-stat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <span class="about-stat-text">Córdoba, Argentina</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            </span>
+            <span class="about-stat-text">Operador certificado DJI</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </span>
+            <span class="about-stat-text">Equipamiento de última generación</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: clamp(2.5rem, 5vw, 5rem);
+    align-items: start;
+  }
+
+  /* --- Photo --- */
+  .about-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
+  }
+
+  .about-photo-frame {
+    position: relative;
+    width: clamp(240px, 22vw, 320px);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+
+  .about-photo-frame :global(img) {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+  }
+
+  .about-photo-border {
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--gray-border);
+    pointer-events: none;
+    transition: border-color var(--transition-base);
+  }
+
+  .about-photo:hover .about-photo-border {
+    border-color: rgba(58, 125, 68, 0.3);
+  }
+
+  .about-name-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.25rem;
+    gap: 0.15rem;
+  }
+
+  .about-name {
+    font-family: 'Sora', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .about-role {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem;
+    color: var(--green-mid);
+    font-weight: 400;
+  }
+
+  /* --- Text Content --- */
+  .about-text {
+    padding-top: 0.5rem;
+  }
+
+  .about-quote {
+    font-family: 'Sora', sans-serif;
+    font-size: clamp(1.05rem, 2vw, 1.2rem);
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--text-primary);
+    border-left: 3px solid var(--green-primary);
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 550px;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+    max-width: 600px;
+  }
+
+  /* --- Stats --- */
+  .about-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--gray-border);
+  }
+
+  .about-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .about-stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: rgba(58, 125, 68, 0.08);
+    color: var(--green-mid);
+    flex-shrink: 0;
+  }
+
+  .about-stat-text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+  }
+
+  /* --- Responsive --- */
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+    .about-photo {
+      position: static;
+    }
+
+    .about-photo-frame {
+      width: 240px;
+    }
+
+    .about-text {
+      text-align: left;
+    }
+
+    .about-quote {
+      font-size: 1rem;
+    }
+  }
+</style>

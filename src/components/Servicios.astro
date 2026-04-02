@@ -1,0 +1,324 @@
+---
+import { Image } from 'astro:assets';
+import resultsCard from '../assets/photos/results-card.jpeg';
+---
+
+<section id="servicios" class="section section--alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Servicios</span>
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <p class="section-subtitle">
+        Tecnología de última generación aplicada al campo argentino.
+        Precisión, eficiencia y resultados medibles en cada operación.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Pulverización Aérea -->
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-card-inner">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Drone body -->
+              <rect x="19" y="18" width="10" height="6" rx="2" fill="currentColor" opacity="0.9"/>
+              <!-- Arms -->
+              <line x1="19" y1="20" x2="10" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="29" y1="20" x2="38" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <!-- Propellers -->
+              <ellipse cx="10" cy="13" rx="5" ry="1.5" fill="currentColor" opacity="0.5"/>
+              <ellipse cx="38" cy="13" rx="5" ry="1.5" fill="currentColor" opacity="0.5"/>
+              <!-- Spray nozzles -->
+              <line x1="20" y1="24" x2="20" y2="28" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+              <line x1="24" y1="24" x2="24" y2="28" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+              <line x1="28" y1="24" x2="28" y2="28" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+              <!-- Spray dots -->
+              <circle cx="18" cy="32" r="0.8" fill="currentColor" opacity="0.3"/>
+              <circle cx="21" cy="34" r="0.6" fill="currentColor" opacity="0.25"/>
+              <circle cx="24" cy="33" r="0.9" fill="currentColor" opacity="0.3"/>
+              <circle cx="27" cy="35" r="0.7" fill="currentColor" opacity="0.2"/>
+              <circle cx="30" cy="32" r="0.8" fill="currentColor" opacity="0.3"/>
+              <circle cx="20" cy="37" r="0.5" fill="currentColor" opacity="0.15"/>
+              <circle cx="25" cy="36" r="0.6" fill="currentColor" opacity="0.2"/>
+              <circle cx="29" cy="37" r="0.5" fill="currentColor" opacity="0.15"/>
+            </svg>
+          </div>
+          <div class="service-content">
+            <span class="service-tag">DJI Agras</span>
+            <h3 class="service-title">Pulverización Aérea</h3>
+            <p class="service-desc">
+              Aplicación precisa de fitosanitarios, fertilizantes foliares y bioestimulantes
+              con drones DJI Agras. Mayor cobertura en menos tiempo, con mínimo impacto
+              en el suelo y el cultivo.
+            </p>
+            <ul class="service-list">
+              <li class="service-list-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Pulverización uniforme
+              </li>
+              <li class="service-list-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Cobertura e impacto deseado
+              </li>
+              <li class="service-list-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Precisión milimétrica con GPS RTK
+              </li>
+              <li class="service-list-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Seguridad en cada vuelo
+              </li>
+              <li class="service-list-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Ahorro de insumos hasta un 30%
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mapeo Multiespectral -->
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-card-inner">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Grid / map base -->
+              <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+              <!-- Grid lines -->
+              <line x1="8" y1="20" x2="40" y2="20" stroke="currentColor" stroke-width="0.6" opacity="0.2"/>
+              <line x1="8" y1="28" x2="40" y2="28" stroke="currentColor" stroke-width="0.6" opacity="0.2"/>
+              <line x1="19" y1="12" x2="19" y2="36" stroke="currentColor" stroke-width="0.6" opacity="0.2"/>
+              <line x1="29" y1="12" x2="29" y2="36" stroke="currentColor" stroke-width="0.6" opacity="0.2"/>
+              <!-- NDVI color patches -->
+              <rect x="9" y="13" width="9.5" height="7" fill="currentColor" opacity="0.15"/>
+              <rect x="19.5" y="13" width="9" height="7" fill="currentColor" opacity="0.3"/>
+              <rect x="29.5" y="13" width="10" height="7" fill="currentColor" opacity="0.2"/>
+              <rect x="9" y="21" width="9.5" height="7" fill="currentColor" opacity="0.35"/>
+              <rect x="19.5" y="21" width="9" height="7" fill="currentColor" opacity="0.1"/>
+              <rect x="29.5" y="21" width="10" height="7" fill="currentColor" opacity="0.25"/>
+              <!-- Scan line -->
+              <line x1="6" y1="24" x2="42" y2="24" stroke="currentColor" stroke-width="1" opacity="0.6" stroke-dasharray="2 2"/>
+              <!-- Satellite / drone indicator -->
+              <circle cx="34" cy="10" r="3" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+              <circle cx="34" cy="10" r="1" fill="currentColor" opacity="0.6"/>
+              <line x1="34" y1="7" x2="34" y2="5" stroke="currentColor" stroke-width="0.8" opacity="0.4"/>
+              <line x1="37" y1="10" x2="39" y2="10" stroke="currentColor" stroke-width="0.8" opacity="0.4"/>
+              <line x1="31" y1="10" x2="29" y2="10" stroke="currentColor" stroke-width="0.8" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="service-content">
+            <span class="service-tag">DJI Mavic Multiespectral</span>
+            <h3 class="service-title">Mapeo Multiespectral</h3>
+            <p class="service-desc">
+              Diagnóstico aéreo avanzado con sensores multiespectrales.
+              Transformamos datos de vuelo en información accionable para
+              optimizar cada hectárea de tu campo.
+            </p>
+            <ul class="service-list">
+              <li class="service-list-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Índices NDVI y de vegetación
+              </li>
+              <li class="service-list-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Detección temprana de malezas
+              </li>
+              <li class="service-list-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Conteo automatizado de plantas
+              </li>
+              <li class="service-list-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Monitoreo de estrés hídrico
+              </li>
+              <li class="service-list-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Mapas de prescripción variable
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results evidence -->
+    <div class="results-block reveal reveal-delay-3">
+      <div class="results-label">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1L10 6H15L11 9.5L12.5 15L8 11.5L3.5 15L5 9.5L1 6H6L8 1Z" fill="currentColor"/></svg>
+        Resultados comprobados
+      </div>
+      <div class="results-image-wrapper">
+        <Image
+          src={resultsCard}
+          alt="Tarjetas de resultados — pulverización uniforme, cobertura, precisión, seguridad, ahorro de insumos"
+          class="results-image"
+          widths={[400, 700, 1000]}
+          sizes="(max-width: 768px) 90vw, 700px"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* --- Grid --- */
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  /* --- Card --- */
+  .service-card {
+    border-radius: var(--radius-lg);
+    background: var(--bg-card);
+    border: 1px solid var(--gray-border);
+    overflow: hidden;
+    transition: all var(--transition-base);
+  }
+
+  .service-card:hover {
+    border-color: var(--gray-border-hover);
+    box-shadow: var(--shadow-md);
+  }
+
+  .service-card-inner {
+    border-left: 3px solid var(--green-primary);
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    height: 100%;
+  }
+
+  .service-card:hover .service-card-inner {
+    border-left-color: var(--green-mid);
+  }
+
+  /* --- Icon --- */
+  .service-icon {
+    width: 52px;
+    height: 52px;
+    background: rgba(58, 125, 68, 0.08);
+    border: 1px solid rgba(58, 125, 68, 0.15);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--green-mid);
+    transition: all var(--transition-base);
+  }
+
+  .service-card:hover .service-icon {
+    background: rgba(58, 125, 68, 0.12);
+    border-color: rgba(58, 125, 68, 0.25);
+    box-shadow: 0 0 20px rgba(58, 125, 68, 0.1);
+  }
+
+  .service-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* --- Content --- */
+  .service-tag {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--green-mid);
+    background: rgba(58, 125, 68, 0.1);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+  }
+
+  .service-title {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  .service-desc {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+  }
+
+  /* --- Check List --- */
+  .service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .service-list-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    transition: color var(--transition-fast);
+  }
+
+  .service-card:hover .service-list-item {
+    color: var(--text-primary);
+  }
+
+  .check-icon {
+    flex-shrink: 0;
+    width: 15px;
+    height: 15px;
+    color: var(--green-mid);
+  }
+
+  /* --- Results Block --- */
+  .results-block {
+    text-align: center;
+  }
+
+  .results-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Sora', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--green-mid);
+    margin-bottom: 1.25rem;
+  }
+
+  .results-image-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--gray-border);
+    transition: all var(--transition-base);
+  }
+
+  .results-image-wrapper:hover {
+    border-color: var(--gray-border-hover);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .results-image-wrapper :global(img) {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* --- Responsive --- */
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

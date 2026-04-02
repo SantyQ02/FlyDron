@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.env
+.astro/
+
+# Original source assets (renamed copies are in src/assets and public/)
+favicon_io/
+Logos FlyDron/
+Photos and Videos/
+About Us - my photo.jpeg
+Tarjetas de resultados.jpeg
